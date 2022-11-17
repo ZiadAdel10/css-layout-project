@@ -17,7 +17,7 @@ FOOTER TEXT COLOR: #ABABAB
   margin: 0;
 }
 
-a {
+.card a {
   color: #ffffff;
   text-decoration: underline;
 }
@@ -35,7 +35,11 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: sticky;
+  top: 0px;
+  background-color: #ffffff;
 }
+
 
 .Docplanner-logo {
   margin-right: 500px;
@@ -88,19 +92,22 @@ ul {
 .container {
   display: flex;
   justify-content: center;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
 }
 
 .card {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-around; */
   align-content: center;
   border-radius: 10px;
-  padding: 10px;
+  padding: 2rem;
   color: #ffffff;
   width: 311px;
   height: 343px;
   margin: 5px;
+  margin-right: 0.8rem;
 }
 
 .card h1 {
@@ -113,6 +120,8 @@ ul {
   font-size: 24px;
   font-family: "Work Sans", sans-serif;
   font-weight: 300;
+  margin-bottom: 3.8rem;
+  margin-top: 1.8rem;
 }
 
 .card a {
@@ -133,7 +142,353 @@ ul {
   background-color: #1a2734;
 }
 
-i {
+.clinic-card p {
+  margin-bottom: 1.8rem;
+}
+
+.container i {
   width: 32px;
   height: 32px;
+}
+
+.mentions {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  margin: 2.5rem auto 3.125rem;
+  position: relative;
+  padding: 0 20px;
+  max-width: 1015px;
+  gap: 30px;
+
+  font-family: "Work Sans", sans-serif;
+  font-weight: 300;
+  font-size: 26px;
+  color: #00b39b;
+}
+
+.mentions p {
+  margin-right: 15rem;
+}
+
+.mentions a {
+  margin: 20px auto;
+  color: #747474;
+  filter: grayscale(100%);
+}
+
+.mentions a:hover {
+  filter: grayscale(0%);
+}
+
+.achievements {
+  background-color: #d8f6f7;
+  display: flex;
+  margin-bottom: 5rem;
+  padding: 0rem 2rem;
+  padding-top: 2rem;
+  gap: 300px;
+}
+
+.achievements h3 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 300;
+  font-size: 34px;
+  color: #00b39b;
+}
+
+.achievements h4 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  text-align: center;
+  color: #00b39b;
+}
+
+.achievements p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #747474;
+}
+
+.main-achievement-section {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  justify-content: space-between;
+  margin-left: 8rem;
+}
+
+.main-achievement-section h3 {
+  margin-left: 12rem;
+  width: 100%;
+}
+
+.main-achievement-section p {
+  margin-left: 12rem;
+  width: 70%;
+}
+
+.main-achievement-section img {
+  margin-right: 16rem;
+  width: 120%;
+}
+
+.highlights {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: repeat(2, 1fr);
+  align-items: center;
+  justify-items: center;
+  column-width: 20%;
+}
+
+.highlights p {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.h-1 {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  background-color: #ffffff;
+  width: 70%;
+  height: 90%;
+  border-radius: 10px;
+  padding: 2rem 1rem;
+}
+
+.h-1 i {
+  margin-left: 5rem;
+  margin-bottom: 10px;
+  color: #8fe3d7;
+}
+
+.h-1 p {
+  margin-top: 0rem;
+}
+
+.h-2 {
+  background-color: #ffffff;
+  width: 70%;
+  height: 90%;
+  border-radius: 10px;
+  padding: 1rem 1rem;
+}
+
+.h-2 i {
+  margin-left: 5rem;
+  margin-bottom: 10px;
+  color: #8fe3d7;
+}
+
+.h-3 {
+  background-color: #ffffff;
+  width: 70%;
+  height: 90%;
+  border-radius: 10px;
+  padding: 1rem 1rem;
+  margin: 2rem 0rem;
+}
+
+.h-3 i {
+  margin-left: 5rem;
+  margin-bottom: 10px;
+  color: #8fe3d7;
+}
+
+.h-4 {
+  background-color: #ffffff;
+  width: 70%;
+  height: 90%;
+  border-radius: 10px;
+  padding: 1rem 1rem;
+  margin: 2rem 0rem;
+}
+
+.h-4 i {
+  margin-left: 5rem;
+  margin-bottom: 10px;
+  color: #8fe3d7;
+}
+
+.marketing {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  justify-items: center;
+  max-width: 1015px;
+  margin-left: 22rem;
+  margin-top: -50px;
+}
+
+.marketing img {
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
+  grid-column: 1/3;
+}
+
+.marketing-head {
+  text-align: center;
+  grid-column: 2/3;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+
+.marketing-head h1 {
+  font-size: 30px;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 300;
+  color: #00b39b;
+}
+
+.marketing-head h3 {
+  font-size: 30px;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 300;
+  color: #00b39b;
+  margin-bottom: 1.5rem;
+}
+
+.marketing-head p {
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #747474;
+}
+
+.Warsaw {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.Barcelona {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.Munich {
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+
+.Istanbul {
+  grid-row: 1/2;
+  grid-row: 3/4;
+}
+
+.Rome {
+  grid-row: 2/3;
+  grid-row: 3/4;
+}
+
+.Bologna {
+  grid-row: 3/4;
+  grid-row: 3/4;
+}
+
+.Curitiba {
+  grid-column: 1/2;
+  grid-row: 4/5;
+}
+
+.Mexico-City {
+  grid-row: 2/3;
+  grid-row: 4/5;
+}
+
+.country-card {
+  background-color: #ffffff;
+  margin: 1.5rem;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.03);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 1rem;
+  align-items: center;
+}
+
+.country-card p {
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #747474;
+  margin: 0.7rem 1rem;
+}
+
+.country-card span {
+  background-color: #1b6edc;
+  border-radius: 4px;
+  padding: 0.5rem;
+  font-size: 10px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  margin: 0 1rem;
+}
+
+.country-card span:hover {
+  background-color: #144f9d;
+}
+
+.country-card:hover {
+  box-shadow: 0 0 21px rgba(33, 33, 33, 0.2);
+}
+
+.CTA {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-between
+  max-width: 1015px;
+  text-align: center;
+}
+
+.CTA h3 {
+  font-size: 30px;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 300;
+  margin-top: 2rem;
+}
+
+.CTA span {
+  background-color: #1b6edc;
+  border-radius: 4px;
+  padding: 0.8rem;
+  font-size: 12px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  margin: 1rem 47rem;
+}
+
+footer {
+  border-top: 1px solid #eef2f2;
+  text-align: center;
+  font-size: 12px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color:#747474;
+  margin-bottom: 1.5rem;
+}
+
+#first-p {
+  margin-bottom: 1.7rem;
+  margin-top: 1.8rem;
+}
+
+footer a {
+  color: #747474;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #57a9f1;
+  text-decoration: underline;
 }
